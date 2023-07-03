@@ -1,8 +1,8 @@
-import {FloatingDelayGroup} from '@floating-ui/react';
+import { FloatingDelayGroup } from '@floating-ui/react';
 import cn from 'classnames';
 import Head from 'next/head';
 import Link from 'next/link';
-import {useEffect, useRef, useState} from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
   BarChart,
@@ -13,9 +13,9 @@ import {
 } from 'react-feather';
 
 import Text from '../assets/text.svg';
-import {MINI_SPONSORS, SPONSORS} from '../data';
-import {Button} from '../lib/components/Button';
-import {Cards} from '../lib/components/Cards';
+import { MINI_SPONSORS, SPONSORS } from '../data';
+import { Button } from '../lib/components/Button';
+import { Cards } from '../lib/components/Cards';
 import {
   Dialog,
   DialogClose,
@@ -24,12 +24,12 @@ import {
   DialogHeading,
   DialogTrigger,
 } from '../lib/components/Dialog';
-import {ComboboxDemo} from '../lib/components/Home/Combobox';
+import { ComboboxDemo } from '../lib/components/Home/Combobox';
 import {
   Menu,
   MenuItem,
 } from '../lib/components/Home/DropdownMenu';
-import {PopoverDemo} from '../lib/components/Home/Popover';
+import { PopoverDemo } from '../lib/components/Home/Popover';
 import {
   Arrow,
   Flip,
@@ -38,8 +38,8 @@ import {
   Size,
   Virtual,
 } from '../lib/components/Home/PositioningDemos';
-import {SelectDemo} from '../lib/components/Home/Select';
-import {Logos} from '../lib/components/Logos';
+import { SelectDemo } from '../lib/components/Home/Select';
+import { Logos } from '../lib/components/Logos';
 import {
   Tooltip,
   TooltipContent,
@@ -100,7 +100,7 @@ function HomePage() {
               className={cn({
                 'animate-string': animate,
               })}
-              style={{transformOrigin: '40% 92%'}}
+              style={{ transformOrigin: '40% 92%' }}
             />
             <path
               d="M140.844 339.077C142.001 337.094 144.867 337.094 146.025 339.077L151.297 348.107C152.465 350.107 151.022 352.62 148.706 352.62H138.162C135.846 352.62 134.404 350.107 135.572 348.107L140.844 339.077Z"
@@ -142,7 +142,7 @@ function HomePage() {
             />
             <mask
               id="mask0_201_2"
-              style={{maskType: 'alpha'}}
+              style={{ maskType: 'alpha' }}
               maskUnits="userSpaceOnUse"
               x="123"
               y="180"
@@ -194,9 +194,8 @@ function HomePage() {
             <img
               role="presentation"
               ref={bannerRef}
-              className={`absolute select-none transition-all duration-500 top-0${
-                hideBanner ? ' scale-95 opacity-0' : ' scale-100'
-              }`}
+              className={`absolute select-none transition-all duration-500 top-0${hideBanner ? ' scale-95 opacity-0' : ' scale-100'
+                }`}
               width={1167}
               height={648}
               onLoad={() => {
@@ -291,7 +290,7 @@ function HomePage() {
         <div className="container mx-auto mb-12 grid max-w-screen-xl gap-4 py-10 dark:text-black sm:grid-cols-2 md:px-4 lg:grid-cols-3">
           <div className="flex h-[18rem] flex-col justify-between bg-white p-10 text-center shadow dark:bg-gray-700 dark:text-gray-100 sm:h-[19rem] sm:rounded-lg md:h-[18rem]">
             <FloatingDelayGroup
-              delay={{open: 1000, close: 150}}
+              delay={{ open: 1000, close: 150 }}
               timeoutMs={200}
             >
               <div>
@@ -524,17 +523,17 @@ function HomePage() {
                 </span>
               </div>
               {[
-                {name: 'shift', size: '0.6 kB'},
-                {name: 'limitShift', size: '0.2 kB'},
-                {name: 'flip', size: '0.8 kB'},
-                {name: 'hide', size: '0.2 kB'},
-                {name: 'offset', size: '0.1 kB'},
-                {name: 'arrow', size: '0.5 kB'},
-                {name: 'autoPlacement', size: '0.4 kB'},
-                {name: 'size', size: '0.3 kB'},
-                {name: 'inline', size: '0.6 kB'},
-                {name: 'autoUpdate', size: '0.3 kB'},
-              ].map(({name, size}) => (
+                { name: 'shift', size: '0.6 kB' },
+                { name: 'limitShift', size: '0.2 kB' },
+                { name: 'flip', size: '0.8 kB' },
+                { name: 'hide', size: '0.2 kB' },
+                { name: 'offset', size: '0.1 kB' },
+                { name: 'arrow', size: '0.5 kB' },
+                { name: 'autoPlacement', size: '0.4 kB' },
+                { name: 'size', size: '0.3 kB' },
+                { name: 'inline', size: '0.6 kB' },
+                { name: 'autoUpdate', size: '0.3 kB' },
+              ].map(({ name, size }) => (
                 <div
                   className="mb-2 flex items-center justify-center gap-2"
                   key={name}
